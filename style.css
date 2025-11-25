@@ -30,21 +30,6 @@ body{
     background-color: var(--primary-color);
     color: #fff;
 }
-
-/* ===== Sidebar ===== */
- .sidebar{
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    padding: 5px 14px;
-    background: #000;
-    z-index: 100;
-    border-right: #3f3f3f solid 1px;
-}
-.sidebar.close{
-    width: 77px;
-}
 .gameadbox{
     background-color: #ffffff1a;
     width: 1080px;
@@ -96,40 +81,6 @@ body{
 .gameadbox .gamefeedbuttons button:hover{
     transform: scale(1.05);
 }
-#loader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 999999;
-    transition: opacity 0.6s ease;
-}
-
-.loadingimg{
-    height: 60px;
-    animation-delay: 1.5s;
-    animation-name: logoAnim;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-}
-
-@keyframes logoAnim {
-    0% {
-      opacity: 1;
-    }
-    50% {
-      transform: scale(3);
-    }
-  }
-    body.loaded #loader {
-      opacity: 0;
-      pointer-events: none;
-    }
 .gameazbanner{
     width: 1080px;
     margin-left: 80px;
@@ -255,12 +206,6 @@ hr.rounded {
 .right-icons .azbutton:hover{
     background-color: #121212;
 }
-.right-icons .login{
-    background-color: #264764;
-}
-.right-icons .login:hover{
-    background-color: #516785;
-}
 .right-icons .leftbutton:hover{
     background-color: #232323;
 }
@@ -271,43 +216,8 @@ hr.rounded {
     color: #ffffff;
     padding-right: 2px;
 }
-.sidebar li{
-    height: 45px;
-    display: flex;
-    align-items: center;
-    margin-bottom: 35px;
-}
-
-.sidebar header .image,
-.sidebar .icon{
-    min-width: 60px;
-}
-@keyframes slideInFromLeft {
-    0% {
-      transform: translatey(-30px);
-    }
-    100% {
-      transform: translateX(0);
-    }
-  }
 .searchresults{
     animation: 1s ease-out 0s 1 slideInFromLeft;
-}
-.sidebar .icon{
-    min-width: 60px;
-    border-radius: 6px;
-    height: 100%;
-    display: flex;
-    transform: translateX(-6px);
-    align-items: center;
-    justify-content: center;
-    font-size: 27px;
-}
-
-.sidebar .text,
-.sidebar .icon{
-    color: #ffffffec;
-    transition: var(--tran-03);
 }
 .contactbuttons{
     margin-left: 90px;
@@ -390,38 +300,8 @@ hr.rounded {
     font-weight: 500;
     color: #ffffffd4;
 }
-.sidebar .menu{
-    margin-top: 125px;
-}
-.sidebar li a{
-    list-style: none;
-    background-color: transparent;
-    display: flex;
-    align-items: center;
-    height: 40px;
-    width: 100%;
-    border-radius: 10px;
-    text-decoration: none;
-    transition: var(--tran-03);
-}
-.nav-link .label{
-    color: rgba(255, 255, 255, 0.708);
-    position: absolute;
-    transform: translateY(27px);
-    font-size: 15px;
-}
-
-.sidebar li a:hover{
-    background-color: var(--primary-color);
-}
 .menu-bar::-webkit-scrollbar{
     display: none;
-}
-.sidebar .menu-bar .mode{
-    border-radius: 6px;
-    background-color: var(--primary-color-light);
-    position: relative;
-    transition: var(--tran-05);
 }
 .atoz{
     margin-left: 62px;
@@ -531,32 +411,6 @@ hr.rounded {
     background-color: #dbd6a9;
     color: #000000;
 }
-.related-games{
-    margin-left: 80px;
-    white-space: nowrap;
-}
-.related-games h3{
-    color: #fff;
-    font-size: 25px;
-    font-weight: 400;
-    margin-left: 15px;
-    margin-bottom: 22px;
-}
-.related-games img {
-    position: relative;
-    object-fit: cover;
-    margin-left: 15px;
-    border-radius: 21px;
-    height: 150px;
-    width: 195px;
-    transition: .3s ease;
-  }
-.related-games img:hover{
-    cursor: pointer;
-    opacity: 0.9;
-    outline: #97bcc5 solid 3.5px;
-    transform: scale(1.05);
-}
 .game-controls .fullscreen:hover{
     background-color: #3c3c3c;
     transform: translateX(20px) scale(0.95);
@@ -636,27 +490,6 @@ hr.rounded {
     margin-top: 57px;
     top: 0;
     width: 100%;
-}
-.atoz .text{
-    font-size: 60px;
-    z-index: 999;
-    text-align: center;
-    letter-spacing: -1px;
-    font-weight: 500;
-    background-image: url(images/gradient.jpg);
-    color: #e0e0e0;
-    height: 90px;
-}
-.atoz h1{
-    display: inline;
-    margin-left: 90px;
-    letter-spacing: -1px;
-    font-size: 30px;
-    color: #fff;
-}
-.atoz a{
-    font-size: 25px;
-    color: #fff;
 }
 .gameslist .letter{
     display: absolute;
@@ -749,10 +582,6 @@ hr.rounded {
     padding: 10px;
     font-size: 35px;
     font-weight: 400;
-}
-.addemo{
-    width: 900px;
-    height: 100px;
 }
 .azadbanner{
     background-color: #52525247;
@@ -1049,6 +878,7 @@ hr.rounded {
     border-radius: 20px;
     outline: 1px solid #6b6a6a;
     transition: ease 0.4s;
+    background: transparent url('http://thinkfuture.com/wp-content/uploads/2013/10/loading_spinner.gif') center no-repeat;
   }
   #longslide{
     width: 515px;
@@ -1056,9 +886,6 @@ hr.rounded {
   #trendslide:hover{
     transform: scale(1.08);
     outline: 4px solid #ffffff52;
-  }
-  #trendslide img{
-    opacity: 90%;
   }
   .slide .hotrank{
     position: absolute;
@@ -1175,180 +1002,6 @@ hr.rounded {
     color: #fff;
     font-weight: 300;
 }
-.gamesubform{
-    padding-left: 80px;
-}
-.gamesugginput{
-    background: #1c1c1c;
-    color: #fff;
-    padding: 20px;
-    margin-right: 10px;
-    font-size: 26px;
-    border: none;
-    width: 390px;
-    outline: 1px solid #5f5f5f;
-    border-radius: 12px;
-}
-.gamesuggsubmit{
-    background: #fff;
-    padding: 10px;
-    border-radius: 12px;
-    font-size: 22px;
-}
-    .slidewrapper {
-      display: flex;
-      transition: transform 0.7s ease-in-out;
-      width: 100%; /* 100% per slide × number of slides */
-      height: 100%;
-    }
-    .bannerslide {
-      flex: 0 0 100%;
-      position: relative;
-    }
-
-    .bannerslide .bannerimage {
-      width: 100%;
-      height: 100%;
-      opacity: 70%;
-      object-fit: cover;
-    }
-    .bannerslide .logothumb{
-        height: 80px;
-    }
-    .slide-text h1{
-        font-size: 29px;
-    }
-
-    .slide-text {
-      position: absolute;
-      bottom: 30px;
-      left: 50px;
-      font-size: 20px;
-      font-weight: bold;
-      color: white;
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    .slide-text b{
-        font-size: 16px;
-        vertical-align: middle;
-        transform: translateY(-5px);
-        background-color: #fff;
-        color: #000;
-        margin-right: 10px;
-        border-radius: 7px;
-        padding-left: 6px;
-        padding-right: 6px;
-        padding-top: 2px;
-        padding-bottom: 2px;
-    }
-    .bangradient{
-        background: linear-gradient(to right, rgb(0, 0, 0), rgba(255, 192, 203, 0));
-        z-index: 9999;
-    }
-    .slide-text.fade-in {
-      animation: textFadeIn 0.8s ease-out forwards;
-      animation-delay: 0.3s;
-    }
-
-    .slide-text.fade-out {
-      animation: textFadeOut 0.5s ease-in forwards;
-    }
-
-    @keyframes textFadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to   { opacity: 1; transform: translateY(0); }
-    }
-
-    @keyframes textFadeOut {
-      from { opacity: 1; transform: translateY(0); }
-      to   { opacity: 0; transform: translateY(0); }
-    }
-    .slide-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 0;
-    opacity: 60%;
-    }
-    .bannerslide .prev, .bannerslide .next {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      background: rgba(0, 0, 0, 0.4);
-      color: white;
-      font-size: 2rem;
-      padding: 10px;
-      cursor: pointer;
-      border-radius: 50%;
-      z-index: 2;
-      user-select: none;
-    }
-
-    .bannerslide .prev:hover,.bannerslide .next:hover {
-      background-color: rgba(0,0,0,0.6);
-    }
-
-    .previous {
-      left: 20px;
-    }
-
-    .nextslide {
-      right: 20px;
-    }
-
-    .fadebanner {
-      animation: fade 1s ease-in-out;
-    }
-    .banneraction{
-        background: #1e1e1eb1;
-        border: none;
-        font-size: 20px;
-        margin-top: 10px;
-        color: #ffffff;
-        border-radius: 10px;
-        padding-top: 7px;
-        padding-bottom: 7px;
-        padding-left: 10px;
-        padding-right: 10px;
-        outline: 2px solid #c6c6c675;
-        transition: ease 0.3s;
-        cursor: pointer;
-    }
-    .banneraction i{
-        transform: scale(1.4) translateY(1px);
-        margin-right: 5px;
-    }
-    .banneraction:hover{
-        background: #fff;
-        color: #000000;
-    }
-
-    .dots {
-      position: absolute;
-      bottom: 10px;
-      width: 100%;
-      text-align: center;
-      z-index: 2;
-    }
-
-    .dot {
-      display: inline-block;
-      width: 12px;
-      height: 12px;
-      margin: 0 5px;
-      background-color: rgba(255, 255, 255, 0.5);
-      border-radius: 50%;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-
-    .dot.active {
-      background-color: white;
-    }
 .mobiledisplay{
     display: none;
     transform: translateY(40px);
@@ -1372,20 +1025,6 @@ hr.rounded {
 .appdownload{
     display: flex;
 }
-.ubappad{
-    width: 1000px;
-}
-.appqrcode{
-    height: 300px;
-}
-.qrcodebox{
-    position: absolute;
-    right: 0;
-    margin-top: 20px;
-    margin-right: 50px;
-    width: 300px;
-    text-align: center;
-}
 .qrcodebox h2{
     color: #fff;
     font-weight: 400;
@@ -1406,10 +1045,6 @@ hr.rounded {
 }
 .bottomtext button:hover{
     transform: scale(1.15);
-}
-.qrdivider{
-    margin-top: 0px;
-    margin-bottom: 29px;
 }
 .mobileappconsent{
     display: none;
@@ -1457,13 +1092,6 @@ hr.rounded {
 
   }
 @media screen and (max-width: 600px) {
-    
-     .sidebar{
-        display: none;
-    }
-    .sidebar.close{
-        width: 0px;
-    }
     .carousels{
         display: none;
     }
@@ -1504,23 +1132,6 @@ hr.rounded {
         display: none;
     }
     .footer{
-        display: none;
-    }
-    .atoz{
-        margin-left: 62px;
-        margin-top: 70px;
-        transform: translateY(-5px);
-    }
-    .appdownload{
-    display: block;
-    }
-    .ubappad{
-        display: none;
-    }
-    .qrcodebox{
-        display: none;
-    }
-    .qrdivider{
         display: none;
     }
     .mobileappconsent{
@@ -1692,6 +1303,8 @@ hr.rounded {
     .mobhometitle{
         color: #fff;
         font-size: 30px;
+        font-weight: 500;
+        margin-left: 20px;
         letter-spacing: -0.3px;
     }
     .mobhomesubtitle{
@@ -1702,8 +1315,8 @@ hr.rounded {
         letter-spacing: 0.3px;
     }
     .gamerow{
-        transform: translateX(-21px) translateY(-15px);
-        width: calc(100% + 30px);
+        transform: translateY(-15px);
+        width: calc(100% - 10px);
         display: flex;
         margin-bottom: 7px;
     }

@@ -1,5 +1,5 @@
-const BUTTON = document.querySelector('button')
-const IFRAME = document.querySelector('.game')
+const BUTTON = document.querySelector('.fullscreen')
+const IFRAME = document.querySelector('.gameplay')
 
 const toggleFullscreen = () => {
     IFRAME.requestFullscreen()

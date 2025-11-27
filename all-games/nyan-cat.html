@@ -24,7 +24,7 @@
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <link rel="canonical" href="https://playstorm.co.uk/all-games/nyan-cat" />
     
-    <title>Nyan Cat</title>
+    <title>Nyan Cat FLY</title>
     
     <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
 </head>
@@ -38,98 +38,47 @@
         });
     </script>
 
-    <div id="sidebar">
-    </div>
-    <script>
-        $(function(){
-          $("#sidebar").load("../nav/sidebar.html");
-        });
-        </script>
     <section class="homepage">
-        <section class="game-wrapper">
-            <div class="gameframe">
-                <iframe class="game" src="../game/nyancat.html" #000 none; name="game" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px"  allowfullscreen></iframe>
+        <div class="gamedisplay">
+            <iframe class="gameplay" src="../game/nyancat.html" #000 none; name="game" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px"  allowfullscreen></iframe>#
+            <div class="sidecontrols">
+                <div class="topdetails">
+                    <h1 class="game-title">Nyan Cat FLY</h1>
+                    <div class="game-optionbuttons">
+                        <button class="fullscreen"><i class='bx bx-fullscreen'></i> Fullscreen</button>
+                        <script src="../fullscreen.js"></script>
 
-                <div class="game-controls">
-                    <h1>Nyan Cat</h1>
-                    <div class="control-buttons">
-                        <button class="fullscreen"><i class='bx bx-fullscreen icon'></i> Fullscreen</button>
-                        <script src="../fullscreen.js">
-                        </script>
-                        <div class="tooltip">
-                            <button id="favButton" class="fav-btn"></i></button>
-                        </div>
+                        <button id="favButton" class="fav-btn"></button>
                         <script type="module">
-                            import { games, addFavourite, removeFavourite, isFavourite, showFavouritePopup } from "../recentlyplayed.js";
+                            import { games, addFavourite, removeFavourite, isFavourite } from "../recentlyplayed.js";
                             const game = games.nyancat;
                             const favButton = document.getElementById("favButton");
 
-                                function updateButton() {
-                            if (isFavourite(game.id)) {
-                                favButton.innerHTML = "<i class='bx bxs-star icon'></i>";
-                                favButton.classList.add("active");
-                            } else {
-                                favButton.innerHTML = "<i class='bx bx-star icon'></i>";
-                                favButton.classList.remove("active");
-                            }}
-                        favButton.addEventListener("click", () => {
-                            if (isFavourite(game.id)) {
-                                removeFavourite(game.id);
-                            } else {
-                                addFavourite(game);
-                                showFavouritePopup();
-                            }
+                            function updateButton() {
+                                if (isFavourite(game.id)) {
+                                    favButton.innerHTML = "<i class='bx bxs-star icon'></i> Saved";
+                                    favButton.classList.add("active");
+                                } else {
+                                    favButton.innerHTML = "<i class='bx bx-star icon'></i> Add to Saved Games";
+                                    favButton.classList.remove("active");
+                                }}
+                            favButton.addEventListener("click", () => {
+                                if (isFavourite(game.id)) {
+                                    removeFavourite(game.id);
+                                } else {
+                                    addFavourite(game);
+                                }
+                                updateButton();
+                            });
                             updateButton();
-                        });
-                        updateButton();
-                </script>
-                    </div>
-
-                    <div class="tags">
-                        <h2 class="age-rating">4+</h2>
-                        <h2 class="category">STRATEGY</h2>
+                        </script>
                     </div>
                 </div>
-                <div class="ad-box">
-                    <h1>Advertisement</h1>
-                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7319072504670835"
-                        crossorigin="anonymous"></script>
-
-                        <ins class="adsbygoogle"
-                        style="display:inline-block;width:257px;height:202px"
-                        data-ad-client="ca-pub-7319072504670835"
-                        data-ad-slot="4023283442"></ins>
-                    <script>
-                        (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
+                <div class="adboxbottom">
+                    <a>ADVERTISEMENT</a>
                 </div>
             </div>
-            <div onclick="document.location='../games-a-z'" class="gameazbanner">
-                <img src="../images/gameazbutton.png">
-            </div>
-            <div class="gameadbox">
-                <h2>Is something not right? <b>Let us know.</b></h2>
-                <h3><b>Email</b> contact@playstorm.co.uk</h3>
-                <div class="gamefeedbuttons">
-                    <a href="https://forms.gle/jmBLdq64SEekh9Lc8">
-                        <button class="gamefeedbackbtn"><i class='bx bx-message-detail'></i> Give us feedback</button>
-                    </a>
-                    <a href="mailto:contact@playstorm.co.uk">
-                        <button class="gamemailbtn"><i class='bx bxs-envelope'></i> Send an email</button>
-                    </a>
-                </div>
-            </div>
-        <br>
-        </section>
-
-        <div id="footer">
         </div>
-        <script>
-            $(function(){
-              $("#footer").load("../nav/footer.html");
-            });
-            </script>
-    
     </section>
     <div id="favOverlay" class="fav-overlay">
     <div class="fav-message">

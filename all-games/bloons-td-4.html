@@ -62,8 +62,14 @@
                 <div class="topdetails">
                     <h1 class="game-title">Bloons Tower Defense 4</h1>
                     <div class="game-optionbuttons">
-                        <button class="fullscreen"><i class='bx bx-fullscreen'></i> Fullscreen</button>
-                        <script src="../fullscreen.js"></script>
+                        <button onclick="toggleFullscreen()" class="fullscreen"><i class='bx bx-fullscreen'></i> Fullscreen</button>
+                        <script>
+                            const IFRAME = document.querySelector('.gameplay')
+                            const toggleFullscreen = () => {
+                                IFRAME.requestFullscreen()
+                            }
+                            BUTTON.addEventListener('click', toggleFullscreen)
+                        </script>
 
                         <button id="favButton" class="fav-btn"></button>
                         <script type="module">

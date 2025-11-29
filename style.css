@@ -114,7 +114,7 @@ hr.rounded {
   }
   .topbar{
     position: fixed;
-    transform: translateY(-58px) translateX(-15px);
+    transform: translateX(-15px);
     height: 58px;
     z-index: 9999;
     width: 100%;
@@ -459,6 +459,12 @@ hr.rounded {
     display: none;
 }
 .homepage{
+    position: fixed;
+    margin-top: 57px;
+    top: 0;
+    width: 100%;
+}
+.page{
     margin-top: 57px;
     top: 0;
     width: 100%;

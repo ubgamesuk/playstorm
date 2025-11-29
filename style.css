@@ -317,7 +317,7 @@ hr.rounded {
     right: 0;
     width: 300px;
     padding: 15px;
-    background: linear-gradient(#000, #043749);
+    background: linear-gradient(to left, #000, #151515);
     height: 100%;
 }
 .gamedisplay .sidecontrols .topdetails{

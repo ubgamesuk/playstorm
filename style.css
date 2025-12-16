@@ -630,7 +630,8 @@ hr.rounded {
 
 }
 .gameslist .azgame .azcategories .info{
-    background-color: #323232;
+    background-color: #1313136f;
+    outline: 1px solid #ffffff27;
     padding: 5px;
     border-radius: 9px;
     margin-right: 2px;
@@ -862,6 +863,7 @@ hr.rounded {
     border-radius: 13px;
     outline: 1px solid #6b6a6a;
     transition: ease 0.4s;
+    overflow: hidden;
   }
   #longslide{
     width: 515px;
@@ -913,8 +915,12 @@ hr.rounded {
   
   .slide:hover {
     opacity: 90%;
-    outline: 4px solid #898989;
+    outline: 4px solid #ffffffb2;
   }
+  .slide img:hover{
+    transform: scale(1.1)
+  }
+
   .categorylist{
     margin-left: 10px;
   }

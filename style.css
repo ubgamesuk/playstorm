@@ -830,7 +830,7 @@ hr.rounded {
    .recentslide {
     flex: 0 0 auto;
     height: 100px;
-    width: 170px;
+    width: 150px;
     margin-right: 11px;
     position: relative;
     text-align: center;
@@ -848,21 +848,20 @@ hr.rounded {
   }
   
   .recentslide:hover {
-    outline: 4px solid #ffffffa7;
+    outline: 3px solid #46c4ffb2;
     opacity: 90%;
   }
   .slide {
-    min-width: 200px;
     flex: 0 0 auto;
     height: 120px;
-    width: 200px;
+    width: 170px;
     margin-right: 15px;
     position: relative;
     text-align: center;
     cursor: pointer;
     border-radius: 13px;
-    outline: 1px solid #6b6a6a;
-    transition: ease 0.4s;
+    outline: 1px solid #8c8c8c;
+    transition: ease 0.2s;
     overflow: hidden;
   }
   #longslide{
@@ -915,7 +914,7 @@ hr.rounded {
   
   .slide:hover {
     opacity: 90%;
-    outline: 4px solid #ffffffb2;
+    outline: 3px solid #46c4ffb2;
   }
   .slide img:hover{
     transform: scale(1.1)

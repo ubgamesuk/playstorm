@@ -133,8 +133,8 @@ hr.rounded {
 }
 .topbar img{
     height: 38px;
-    margin-left: 25px;
-    transform: translateY(12px);
+    margin-left: 40px;
+    transform: translateY(10px);
     vertical-align: middle;
     transition: ease 0.4s;
 }

@@ -139,7 +139,7 @@ hr.rounded {
     transition: ease 0.4s;
 }
 .topbar img:hover{
-    transform: translateY(12px) scale(0.95);
+    transform: translateY(10px) scale(0.95);
     cursor: pointer;
 }
 .topbar .form-search{
@@ -590,12 +590,13 @@ hr.rounded {
     height: 165px;
     border-radius: 20px;
     padding-right: 20px;
-    transition: 0.5s ease;
+    transition: 0.3s ease;
     cursor: pointer;
     position: relative;
 }
 .gameslist .azgame:hover{
-    transform: scale(1.05);
+    transform: scale(0.95);
+    outline: 1px solid #aadcff92;
 }
 .gameslist .azgame .azgameicon{
     float: left;
